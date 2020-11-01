@@ -34,12 +34,18 @@ body {
     height: 200px;
 }
 
+.nav-link {
+    margin-top: 20%;
+    font-family: "Piazzolla", serif;
+
+}
 #container {
     width: 100%;
     height: 100%;
     background-color: black;
     position: relative;
   }
+
   #container video {
     width: 100%;
     height: 100%;
@@ -50,23 +56,30 @@ body {
         height: 50vh;
     }
   }
+
   .overlay {
     position: absolute;
     top: 0;
     left: 0;
     z-index:1;
+  }
+    
+
     h1{
-        margin-top: 70%;
-        padding: 10%;
+        margin-top: 650px;
+        padding: 0 20px;
         color:white;
         text-align: center;
         align-items: center;
         font-family: "Piazzolla", serif;
         backdrop-filter: blur(8px);
         letter-spacing: 6px;
-        
-      }
-  }
+        font-size: 32px;
+
+        @media screen and (max-width: 767px) {
+            font-size: 16px;
+        }
+    }
 
   hr {
     margin: 0 auto;
@@ -85,7 +98,7 @@ p {
 }
 
 #copyright {
-    font-size: 24px;
+    font-size: 12px;
     background: black !important;
     width: 100%;
 }
