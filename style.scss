@@ -18,6 +18,11 @@ body {
     height: 100%;
     display: block;
     text-align: center;
+
+    //手機
+    ＠media screen and (max-width:767px) {
+        margin-top: 10px;
+    }
 }
 
 .navbar-expand-lg .navbar-nav {
@@ -27,17 +32,29 @@ body {
     background: black !important;
     font-size: large;
     padding: 0 20px;
+
+    //手機
+    ＠media screen and (max-width:767px) {
+        padding: 0 10px;
+    }
 }
 
 .nav img {
     width: 200px;
     height: 200px;
+
+     //手機
+     ＠media screen and (max-width:767px) {
+        width: 125px;
+        height: 125px;
+    }
 }
 
 .nav-link {
-    margin-top: 20%;
+    margin-top: 19%;
     font-family: "Piazzolla", serif;
 }
+
 #container {
     width: 100%;
     height: 100%;
