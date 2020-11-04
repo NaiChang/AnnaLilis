@@ -74,13 +74,15 @@ body {
 }
 
 .overlay {
-    position: absolute;
+    position: relative;
+    height: 100vh;
     top: 0;
     left: 0;
     z-index: 1;
 }
 
 h1 {
+    position: absolute;
     padding: 0 20px;
     color: white;
     text-align: center;
