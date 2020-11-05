@@ -35,8 +35,8 @@ body {
     margin: 0 auto;
     border: 0;
     background: black !important;
-    font-size: large;
-    padding: 0 20px;
+    font-size: 22px;
+    padding: 0 30px;
 
     //手機
     @media screen and (max-width: $mobile) {
@@ -81,15 +81,12 @@ body {
 
 .overlay {
     position: relative;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    height: 1vh;
 }
 
 h1 {
     position: absolute;
-    bottom:1000px;
+    bottom: 5px;
     padding: 0 20px;
     color: white;
     text-align: center;
@@ -101,8 +98,7 @@ h1 {
 
     // 電腦
     @media screen and (min-width: $desktop) {
-        margin-top: 650px;
-        font-size: 32px;
+        font-size: 36px;
     }
 
     // 平板
@@ -113,7 +109,7 @@ h1 {
     // 手機
     @media screen and (max-width: $mobile) {
         font-size: 14px;
-        margin-top: 280px;
+        margin-top: 100px;
         padding: 0 5px;
     }
 }
@@ -132,6 +128,7 @@ p {
     text-align: center;
     color: whitesmoke;
     font-family: "Sansita Swashed", cursive;
+    letter-spacing: 1px;
 
     // 手機
     @media screen and (max-width: $mobile) {
@@ -140,7 +137,7 @@ p {
 }
 
 #copyright {
-    font-size: 12px;
+    font-size: 16px;
     background: black !important;
     width: 100%;
 }
