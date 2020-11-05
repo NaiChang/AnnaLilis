@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Piazzolla:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap");
 
+
+$desktop: 1025px;
+$table: 1024px;
+$mobile: 767px; 
+
 * {
     margin: 0;
     padding: 0;
@@ -20,12 +25,12 @@ body {
     text-align: center;
 
     //手機
-    ＠media screen and (max-width:767px) {
+    @media screen and (max-width: $mobile) {
         margin-top: 10px;
     }
 }
 
-.navbar-expand-lg .navbar-nav {
+.navbar .navbar-nav {
     text-align: center;
     margin: 0 auto;
     border: 0;
@@ -34,7 +39,7 @@ body {
     padding: 0 20px;
 
     //手機
-    ＠media screen and (max-width:767px) {
+    @media screen and (max-width: $mobile) {
         padding: 0 10px;
     }
 }
@@ -44,7 +49,7 @@ body {
     height: 200px;
 
      //手機
-     ＠media screen and (max-width:767px) {
+     @media screen and (max-width: $mobile) {
         width: 125px;
         height: 125px;
     }
@@ -67,7 +72,8 @@ body {
     height: 100%;
     position: relative;
     z-index: 0;
-    @media screen and (max-width: 767px) {
+
+    @media screen and (max-width: $mobile) {
         width: 100%;
         height: 50vh;
     }
@@ -75,7 +81,7 @@ body {
 
 .overlay {
     position: relative;
-    height: 100vh;
+    height: 100%;
     top: 0;
     left: 0;
     z-index: 1;
@@ -83,6 +89,7 @@ body {
 
 h1 {
     position: absolute;
+    bottom:1000px;
     padding: 0 20px;
     color: white;
     text-align: center;
@@ -93,18 +100,18 @@ h1 {
     
 
     // 電腦
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: $desktop) {
         margin-top: 650px;
         font-size: 32px;
     }
 
     // 平板
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: $table) {
         margin-top: 500px;
         font-size: 24px;
     }
     // 手機
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $mobile) {
         font-size: 14px;
         margin-top: 280px;
         padding: 0 5px;
@@ -127,7 +134,7 @@ p {
     font-family: "Sansita Swashed", cursive;
 
     // 手機
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $mobile) {
         font-size: 12px;
     }
 }
