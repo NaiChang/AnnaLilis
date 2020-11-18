@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap');
+
+$desktop: 1025px;
+$table: 1024px;
+$mobile: 767px; 
+
+body {
+    background-color: black;
+}
+
+.carousel-item {
+    @media screen and (min-width: $desktop) {
+        height: 620px;    
+    }
+    @media screen and (max-width: $table) {
+        height: 620px;    
+    }
+    @media screen and (max-width: $mobile) {
+        height: 230px;
+    }
+}
+
+.container {
+    background-color: black !important;
+}
+
+.navbar {
+    height: 200px;
+    background-color: black !important;
+    color: whitesmoke;
+}
+
+.navbar-brand img {
+    height: 200px;
+    width: 200px;
+}
+
+.dropdown-menu {
+    background-color: black !important;
+}
+
+.footer {
+    font-size: 12px;
+    background-color: black !important;
+}
+
+.card-img-top {
+    margin: 0 auto;
+    
+    @media screen and (max-width: $mobile) {
+        padding: 30px;
+    }
+}
+
+.card, .card-text {
+    background-color: black;
+}
+
+h6 {
+    font-family: 'PT Mono ', monospace;
+    font-size: 14px;
+}
+
+p {
+    font-family: 'Markazi Text', serif;
+}
+
