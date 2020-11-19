@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Piazzolla:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap');
+
 
 
 $desktop: 1025px;
@@ -57,7 +59,8 @@ body {
 
 .nav-link {
     margin-top: 19%;
-    font-family: "Piazzolla", serif;
+    font-family: 'Tinos', serif;
+    letter-spacing: 1px;
 }
 
 #container {
@@ -137,7 +140,7 @@ p {
 }
 
 #copyright {
-    font-size: 16px;
+    font-size: 12px;
     background: black !important;
     width: 100%;
 }
