@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Order Form | AnnaLilis</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
@@ -12,7 +12,7 @@
 
     <!-- my CSS -->
     <link rel="stylesheet" href="./ostyle.css">
- 
+
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
 
@@ -65,7 +65,7 @@
 
 
         <!-- 列表 -->
-        <div class="content">
+        <div class="content" id="calc">
             <div class="item-header">
                 <div class="commodity0">Products</div>
                 <div class="product-name0">Name</div>
@@ -76,67 +76,65 @@
             </div>
             <hr>
             <!-- 1 -->
-            <div class="item-content" v-for="(item, index) in itemList" :key="item.id">
+            <div class="item-content">
                 <div class="item-header item-body">
                     <div class="item-detail">
                         <img src="./img/earrning02.jpg">
                         <div class="name">Rose Gold Earrings</div>
                     </div>
 
-                    <div class="price"><span>NT$</span>3000</div>
+                    <div class="price"><span>NT$</span>{{ productA.price }}</div>
                     <div class="count">
-                        <button id="reduce">－</button>
-                        1
-                        <button id="add">＋</button>
+                        <button id="reduce" @click="reduce(productA)">－</button>
+                        {{ productA.count }}
+                        <button id="add" @click="add(productA)">＋</button>
                     </div>
 
-                    <div class="amount">3000</div>
+                    <div class="amount">{{ productA.total }}</div>
                     <div class="operate">
                         <h4>Order</h4>
                         <button id="delete">cancel</button>
                     </div>
                 </div>
             </div>
-
             <!-- 2 -->
-            <div class="item-content" v-for="(item, index) in itemList" :key="item.id">
+            <div class="item-content">
                 <div class="item-header item-body">
                     <div class="item-detail">
                         <img src="./img/leg2.jpg">
                         <div class="name">Slivery Medal Anklet</div>
                     </div>
 
-                    <div class="price"><span>NT$</span>3000</div>
+                    <div class="price"><span>NT$</span>{{ productB.price }}</div>
                     <div class="count">
-                        <button id="reduce">－</button>
-                        1
-                        <button id="add">＋</button>
+                        <button id="reduce" @click="reduce(productB)">－</button>
+                        {{ productB.count }}
+                        <button id="add" @click="add(productB)">＋</button>
                     </div>
 
-                    <div class="amount">3000</div>
+                    <div class="amount">{{ productB.total }}</div>
                     <div class="operate">
                         <h4>Order</h4>
                         <button id="delete">cancel</button>
                     </div>
                 </div>
             </div>
-
             <!-- 3 -->
-            <div class="item-content" v-for="(item, index) in itemList" :key="item.id">
+            <div class="item-content">
                 <div class="item-header item-body">
                     <div class="item-detail">
                         <img src="./img/necklace03.jpg">
                         <div class="name">Classic Slivery</div>
                     </div>
 
-                    <div class="price"><span>NT$</span>3000</div>
+                    <div class="price"><span>NT$</span>{{ productC.price }}</div>
                     <div class="count">
-                        <button id="reduce">－</button>
-                        1
-                        <button id="add">＋</button>
+                        <button id="reduce" @click="reduce(productC)">－</button>
+                        {{ productC.count }}
+                        <button id="add" @click="add(productC)">＋</button>
                     </div>
 
-                    <div class="amount">3000</div>
+                    <div class="amount">{{ productC.total }}</div>
                     <div class="operate">
                         <h4>Order</h4>
                         <button id="delete">cancel</button>
@@ -150,7 +148,7 @@
                 <p> Standard shipping NT$ 120 </p>
                 <div class="sum aright">
                     <div class="yuan">TWD</div>
-                    <div class="sum-price">9000</div>
+                    <div class="sum-price" id="product">{{ productA.total + productB.total + productC.total }}</div>
 
                 </div>
             </div>
@@ -176,7 +174,12 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
             integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
             crossorigin="anonymous"></script>
+
+        <!--  VUE -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+        <script src="./script.js"></script>
 </body>
-<script src="./script.js"></script>
+
 
 </html>

@@ -75,9 +75,13 @@ hr {
   }
 }
 
-#copyright {
-  font-size: 16px;
+footer {
+  font-size: 12px;
   background: black !important;
   width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  padding-top: 30px;
+  padding-bottom: 60px;
 }
 /*# sourceMappingURL=newsstyle.css.map */
