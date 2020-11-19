@@ -4,20 +4,20 @@ var mycart = new Vue({
         itemList:[
             {
                 id:'1',
-                itemName:'FEATHER_玫瑰金黑_穿孔耳環',
-                price:'580',
+                itemName:'Rose Gold EarringsSlivery Medal Anklet',
+                price:'3000',
                 count:'2',
             },
             {
                 id:'2',
-                itemName:'WING_銀亮金白_穿孔耳環',
-                price:'680',
+                itemName:'Slivery Medal Anklet',
+                price:'3000',
                 count:'1',
             },
             {
                 id:'3',
-                itemName:'GEM_寶石綠_穿孔耳環',
-                price:'780',
+                itemName:'Classic Slivery',
+                price:'3000',
                 count:'1',
             },
         ]

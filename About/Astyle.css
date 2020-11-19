@@ -155,16 +155,12 @@ footer p {
           transform: translateX(-48%);
 }
 
-#icon a {
-  padding: 20px;
-  -webkit-filter: opacity(20%);
-          filter: opacity(20%);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-#icon a:hover {
-  -webkit-filter: opacity(100%);
-          filter: opacity(100%);
+#toTop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=Astyle.css.map */

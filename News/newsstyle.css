@@ -1,3 +1,15 @@
+body {
+  background-color: black;
+}
+
+.navbar {
+  background-color: black !important;
+}
+
+.dropdown-menu {
+  background-color: black !important;
+}
+
 #box {
   background-image: url(./img/banner.jpg);
   background-position-y: bottom;

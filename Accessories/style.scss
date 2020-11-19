@@ -47,7 +47,8 @@ body {
 
 .card-img-top {
     margin: 0 auto;
-    
+    border-radius: 5px;
+
     @media screen and (max-width: $mobile) {
         padding: 30px;
     }
