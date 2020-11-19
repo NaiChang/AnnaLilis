@@ -49,8 +49,9 @@ body {
     display: table;
     max-width: 100%;
 }
+
 #cartbanner {
-    height: auto;
+    height: 50%;
     width: 100%;
     margin-bottom: 80px;
     margin-top: -80px;
@@ -77,12 +78,24 @@ h3 {
     padding-left: 25px;
     margin-bottom: 5px;
 }
-.commodity0, .price0 {
-    padding-left: 20px;
+.commodity0 {
+    padding-left: 10px;
 }
-.subtotal0, .change0 {
+.count0{
+    padding-left: 15px;
+}
+
+.price0{
+    padding-left: 30px;
+}
+
+.subtotal0 {
     padding-right: -60px;
 }
+.change0 {
+    padding-left: 20px;
+} 
+
 hr {
     background-color: #fff;
 }
@@ -149,10 +162,11 @@ h4 {
     margin-right: 200px;
 }
 .totalline {
-    color: #F9BF45
+    color: rgb(202, 173, 95);
 }
+
 p {
-    color:#8888;
+    color: rgb(180,165, 130);
     font-size: 10px;
 }
 
@@ -172,9 +186,10 @@ p {
 
 .sum-price {
     display: inline;
+    padding: 5px;
     text-align: right;
-    color: red;
-    font-size: 25px;
+    color: rgb(181, 73, 91);
+    font-size: 24px;
 }
 .yuan {
     display: inline;
@@ -183,6 +198,7 @@ p {
 }
 
 #copyright {
+    margin-top: 150px;
     font-size: 16px;
     background: #000 !important;
     width: 100%;    

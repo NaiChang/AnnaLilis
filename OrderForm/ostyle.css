@@ -54,7 +54,7 @@ body {
 }
 
 #cartbanner {
-  height: auto;
+  height: 50%;
   width: 100%;
   margin-bottom: 80px;
   margin-top: -80px;
@@ -81,12 +81,24 @@ h3 {
   margin-bottom: 5px;
 }
 
-.commodity0, .price0 {
-  padding-left: 20px;
+.commodity0 {
+  padding-left: 10px;
 }
 
-.subtotal0, .change0 {
+.count0 {
+  padding-left: 15px;
+}
+
+.price0 {
+  padding-left: 30px;
+}
+
+.subtotal0 {
   padding-right: -60px;
+}
+
+.change0 {
+  padding-left: 20px;
 }
 
 hr {
@@ -166,11 +178,11 @@ h4 {
 }
 
 .totalline {
-  color: #F9BF45;
+  color: #caad5f;
 }
 
 p {
-  color: #8888;
+  color: #b4a582;
   font-size: 10px;
 }
 
@@ -190,9 +202,10 @@ p {
 
 .sum-price {
   display: inline;
+  padding: 5px;
   text-align: right;
-  color: red;
-  font-size: 25px;
+  color: #b5495b;
+  font-size: 24px;
 }
 
 .yuan {
@@ -202,6 +215,7 @@ p {
 }
 
 #copyright {
+  margin-top: 150px;
   font-size: 16px;
   background: #000 !important;
   width: 100%;
