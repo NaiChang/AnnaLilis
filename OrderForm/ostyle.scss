@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap');
+
+$desktop: 1025px;
+$table: 1024px;
+$mobile: 767px; 
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 微軟正黑體;
+}
+
+//背景
+body {
+    background: black !important;
+}
+
+//navbar
+.carousel-item {
+    @media screen and (min-width: $desktop) {
+        height: 620px;    
+    }
+    @media screen and (max-width: $table) {
+        height: 620px;    
+    }
+    @media screen and (max-width: $mobile) {
+        height: 230px;
+    }
+}
+.container {
+    background-color: black !important;
+}
+.navbar {
+    height: 200px;
+    background-color: black !important;
+    color: whitesmoke;
+}
+.navbar-brand img {
+    height: 200px;
+    width: 200px;
+}
+.dropdown-menu {
+    background-color: black !important;
+}
+
+//banner
+.demo {
+    display: table;
+    max-width: 100%;
+}
+#cartbanner {
+    height: auto;
+    width: 100%;
+    margin-bottom: 80px;
+    margin-top: -80px;
+    display: table-cell;
+    //vertical-align: middle;
+}
+
+//mycart
+h3 {
+    font-size: 25px;
+    margin: 50px 50px;
+    color: #000;
+}
+
+//列表
+.item-header {
+    display: flex;
+    width: 1000;
+    margin: 0 auto;
+    height: 30px;
+    color: whitesmoke;
+    background-color: #000;
+    border-radius: 3px; //圓角屬性
+    padding-left: 25px;
+    margin-bottom: 5px;
+}
+.commodity0, .price0 {
+    padding-left: 20px;
+}
+.subtotal0, .change0 {
+    padding-right: -60px;
+}
+hr {
+    background-color: #fff;
+}
+
+//列表-商品
+.item-header div {
+    display: inline-block;
+    width: 280px;
+    color: whitesmoke;
+}
+
+.item-header .item-detail{
+    width: 50%;
+}
+
+.item-body {
+    margin-top: 0px auto;
+    height: 100px;
+    align-items: center;
+}
+.item-detail {
+    margin-top: 18px;
+}
+
+.item-detail img {
+    width: 80px;
+    height: 80px;
+    border-radius: 3px;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.item-detail .name {
+    margin-left: 100px;
+    margin-top: 20px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+//operate
+h4 {
+    display: inline;
+    font-size: 17px;
+}
+#reduce, #add {
+    margin: 5px;
+    font-size: 10px;
+    border-radius: 3px;
+}
+#delete {
+    display: inline;
+    margin: 5px;
+    font-size: 8px;
+    border-radius: 3px;
+}
+
+//總計 total
+.total {
+    display: inline;
+    text-align: right;
+    line-height: 20px;
+    margin-right: 200px;
+}
+.totalline {
+    color: #F9BF45
+}
+p {
+    color:#8888;
+    font-size: 10px;
+}
+
+//總計 total_2
+.sum {
+    border: 5px solid #E5E5E5;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px 8px;
+    width: 150px;
+    text-indent: -13px;
+}
+.aright {
+    float: right;
+    text-align: right;
+}
+
+.sum-price {
+    display: inline;
+    text-align: right;
+    color: red;
+    font-size: 25px;
+}
+.yuan {
+    display: inline;
+    text-align: right;
+    color: whitesmoke;
+}
+
+#copyright {
+    font-size: 16px;
+    background: #000 !important;
+    width: 100%;    
+}
+

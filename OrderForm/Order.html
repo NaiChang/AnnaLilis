@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- my CSS -->
+    <link rel="stylesheet" href="./ostyle.css">
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="container bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand" href="../index.html">
+                <img src="./img/logo (1).png" alt="AnnaLilis-HOME">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link text-light" href="#">NEWS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Order Form</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            ACCESSORIES
+                        </a>
+                        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item text-light" href="../Accessories/handwear.html">Handwears</a>
+                            <a class="dropdown-item text-light" href="../Accessories/earring.html">Earrings</a>
+                            <a class="dropdown-item text-light" href="../Accessories/necklace.html">Necklaces</a>
+                            <a class="dropdown-item text-light" href="../Accessories/anklet.html">Anklets</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="mycart">
+            <h3>購物車商品</h3>
+        </div>
+
+        <!-- banner -->
+        <div class="demo">
+            <img id="cartbanner" src="./img/1.jpg" alt="">
+        </div>
+
+
+        <!-- 列表 -->
+        <div class="content">
+            <div class="item-header">
+                <div class="commodity0">商品</div>
+                <div class="product-name0">名稱</div>
+                <div class="price0">單價 </div>
+                <div class="count0">數量 </div>
+                <div class="subtotal0">小計 </div>
+                <div class="change0">變更 </div>
+            </div>
+            <hr>
+            <!-- 1 -->
+            <div class="item-content" v-for="(item, index) in itemList" :key="item.id">
+                <div class="item-header item-body">
+                    <div class="item-detail">
+                        <img src="./img/earrning02.jpg">
+                        <div class="name">FEATHER_玫瑰金黑_穿孔耳環</div>
+                    </div>
+
+                    <div class="price"><span>NT$</span>580</div>
+                    <div class="count">
+                        <button id="reduce">－</button>
+                        1
+                        <button id="add">＋</button>
+                    </div>
+
+                    <div class="amount">580</div>
+                    <div class="operate">
+                        <h4>移到追蹤清單</h4>
+                        <button id="delete">取消</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="item-content" v-for="(item, index) in itemList" :key="item.id">
+                <div class="item-header item-body">
+                    <div class="item-detail">
+                        <img src="./img/leg2.jpg">
+                        <div class="name">WING_銀亮金白_穿孔耳環</div>
+                    </div>
+
+                    <div class="price"><span>NT$</span>680</div>
+                    <div class="count">
+                        <button id="reduce">－</button>
+                        1
+                        <button id="add">＋</button>
+                    </div>
+
+                    <div class="amount">680</div>
+                    <div class="operate">
+                        <h4>移到追蹤清單</h4>
+                        <button id="delete">取消</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="item-content" v-for="(item, index) in itemList" :key="item.id">
+                <div class="item-header item-body">
+                    <div class="item-detail">
+                        <img src="./img/necklace03.jpg">
+                        <div class="name">GEM_寶石綠_穿孔耳環</div>
+                    </div>
+
+                    <div class="price"><span>NT$</span>780</div>
+                    <div class="count">
+                        <button id="reduce">－</button>
+                        1
+                        <button id="add">＋</button>
+                    </div>
+
+                    <div class="amount">780</div>
+                    <div class="operate">
+                        <h4>移到追蹤清單</h4>
+                        <button id="delete">取消</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 總計 -->
+            <div class="total">
+                <div class="totalline">總計3項商品，總計金額</div>
+                <p> (未含物流處理費) </p>
+                <div class="sum aright">
+                    <div class="sum-price">2040</div>
+                    <div class="yuan">元</div>
+                </div>
+            </div>
+
+
+
+            <!-- footer -->
+            <footer id="copyright" class="footer text-muted bg-dark py-4 text-center mt-3 mt-md-3">
+                Copyright &copy; 2020 AnnaLilis
+            </footer>
+
+        </div>
+
+
+        <!-- Bootstrap CDN -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+            integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+            crossorigin="anonymous"></script>
+</body>
+<script src="./script.js"></script>
+
+</html>
